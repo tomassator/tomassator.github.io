@@ -1,0 +1,579 @@
+* {
+
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/*CONTENEDOR DEL LOGO*/
+.container0{
+    display: grid;
+    margin: auto;
+    width: 1200px;
+    height: 100px;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    text-align: center;
+}
+
+.logo{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+#logo{
+    width: 600px;
+    height: 100px;
+}
+
+/* CONTENEDOR DE ARRIBA*/
+.container1{
+    display: grid;
+    margin: auto;
+    width: 1200px;
+    height: 600px;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10% 50% 40%;
+    
+}
+
+/*Titulo*/
+.titulo{
+    background-color: white;
+    border-bottom: 4px solid gray;
+}
+
+.title{
+    background-color: white;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    color: gray;
+}
+
+
+/*Seccion 1 de noticias*/
+.top1{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
+    background-image: url("https://resources.esportsinsider.com/esportsinsider/2023/05/Screenshot-2023-05-05-at-10.27.32-min-large.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 10px;  
+    
+    transition: .4s linear;
+
+   
+    
+}
+
+
+.box_noticia:hover{
+    width: 101%;
+    height: 101%;
+    transition: .4s linear;
+    
+}
+
+.noticia1{
+    color: white;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: black;
+    opacity: .8;     
+}
+
+.noticia1 h2{
+    margin-left: 10px;
+}
+
+.img_noticia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.img{
+    width: 90%;
+    height: 90%;
+}
+
+.descripcion_noticia{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+
+
+}
+
+
+
+
+/*Seccion 2 de noticias*/
+.top2{
+    display: grid;   
+    width: 100%;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
+    background-image: url("https://resources.esportsinsider.com/esportsinsider/2023/05/Screenshot-2023-05-05-at-10.27.32-min-large.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 10px;   
+    transition: .4s linear;
+    margin-left: 10px;
+
+}
+
+.noticia2{
+    color: white;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: black;
+    opacity: .8;  
+}
+
+.noticia2 h2{
+    margin-left: 10px;
+    font-size: 100%;
+    
+}
+
+
+/*Seccion 3 de noticias*/
+.top3{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 70% 30%;
+    margin-top: 20px;
+
+}
+
+
+
+
+
+
+.noticia3{
+    display: flex;
+    align-items: flex-end;
+    width: 98%;
+    height: 98%;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-image: url("https://resources.esportsinsider.com/esportsinsider/2023/05/Screenshot-2023-05-05-at-10.27.32-min-large.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    
+}
+
+.noticia4{
+    display: flex;
+    align-items: flex-end;
+    width: 98%;
+    height: 98%;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background-image: url("https://resources.esportsinsider.com/esportsinsider/2023/05/Screenshot-2023-05-05-at-10.27.32-min-large.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+.noticia5{
+    display: flex;
+    align-items: flex-end;
+    width: 98%;
+    height: 98%;
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background-image: url("https://resources.esportsinsider.com/esportsinsider/2023/05/Screenshot-2023-05-05-at-10.27.32-min-large.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+.noticia6{
+    display: flex;
+    align-items: flex-end;
+    width: 98%;
+    height: 98%;
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background-image: url("https://resources.esportsinsider.com/esportsinsider/2023/05/Screenshot-2023-05-05-at-10.27.32-min-large.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+
+.combonoticias h2{
+    height: 30%;
+    color: white;
+    opacity: .8;  
+    background-color: black;
+    font-size: 100%;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.combonoticias:hover{
+    width: 99%;
+    height: 99%;
+    transition: .4s linear;
+}
+
+
+
+
+
+
+/* CONTENEDOR DEL MEDIO*/
+
+.container2{
+
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: 10% 80% 10%;
+}
+
+
+
+.midtitle{
+    background-color: white;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    color: gray;
+}
+.mid1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border: 1px outset gray;
+    margin: auto;
+}
+
+.mid2{
+    
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 1px outset gray;
+    margin: auto;
+}
+
+.mid3{
+    
+    grid-column: 3/4;
+    grid-row: 2/3;
+    border: 1px outset gray;
+    margin: auto;
+}
+
+.mid4{
+
+    grid-column: 1/4;
+    grid-row: 3/4;
+    text-align: center;
+    text-decoration: none;
+    
+
+}
+
+#btn_maseventos{
+    text-decoration: none;
+    color: #9b3d7f;
+    font-size: 30px;
+    display: block;
+}
+
+
+
+
+.btn_maseventos{ 
+    border: 3px solid #94377e;
+    border-radius: 8px;
+    width: 50%;
+    height: 80%;
+}
+
+.btn_maseventos:hover{ 
+    background-color: #9b3d7f;
+    transition: 0.3s;
+}
+
+#btn_maseventos:hover{
+    color: white;
+    transition: 0.3s;
+}
+
+/*EFECTO FLIP*/
+
+.flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 400px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: black;
+
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgb(251, 255, 30);
+    color: black;
+    transform: rotateY(180deg);
+}
+ /* ..................................................................*/
+
+
+
+
+/* CONTENEDOR DE ABAJO*/
+.container3{
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 10% 40% 40% 10%;
+}
+
+.equipotitle{
+    grid-column: 1/5;
+    grid-row: 1/2;
+    background-color: white;
+    color: gray;
+}
+
+
+
+.imagen_equipo{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+
+.btn_equipo{
+    background-color: black;
+    border: 3px solid;
+    border-radius: 8px;
+    width: 50%;
+
+
+}
+
+
+.btn_equipo a{
+    color: white;
+    text-decoration: none;
+}
+
+.equipo1{
+    background-color: coral;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+}
+
+.equipo2{
+    background-color: gold;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+}
+
+.equipo3{
+    background-color: firebrick;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+}
+.equipo4{
+    background-color: cornflowerblue;
+    grid-column: 4/5;
+    grid-row: 2/4;
+    text-align: center;
+}
+
+.equipo5{
+    background-color: indianred;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: center;
+}
+.equipo6{
+    background-color: lightgreen;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: center;
+}
+.equipo7{
+    background-color: wheat;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    text-align: center;
+}
+.equipo8{
+    background-color: darkkhaki;
+    grid-column: 4/5;
+    grid-row: 3/4;
+    text-align: center;
+}
+
+
+.equipo9{
+    background-color: white;
+    grid-column: 1/5;
+    grid-row: 4/5;
+    text-align: center;
+
+}
+
+
+
+
+.btn_vermasequipos{
+
+    border: 3px solid #94377e;
+    border-radius: 8px;
+    width: 50%;
+    height: 80%;
+}
+
+.btn_vermasequipos a{
+    text-decoration: none;
+    color: #9b3d7f;
+    font-size: 30px;
+    display: block;
+}
+
+.btn_vermasequipos:hover{ 
+    background-color: #9b3d7f;
+    transition: 0.3s;
+}
+
+.btn_vermasequipos a:hover{
+    color: white;
+    transition: 0.3s;
+}
+
+
+
+
+/*HEADER Y FOOTER*/
+header, footer {
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    background-color: rgba(0, 100, 0, 0.192);
+    padding: 3px;
+    text-align: right;
+}
+
+.header-links ul, .footer-links ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+  
+.header-links li, .footer-links li {
+    margin-right: 20px;
+}
+  
+.header-links a, .footer-links a {
+    color: #000;
+    text-decoration: none;
+}
+  
+.redes img {
+    width: 30px;
+    height: 30px;
+}
+  
+.redes li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-container, .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+  
+.footer-logo img, .header-logo img {
+    max-width: 80px;
+}
+  
+.footer-social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.footer-social li {
+    margin-right: 20px;
+}
+
+.footer-social i {
+    font-size: 20px;
+}
+
+.footer-bottom {
+
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}

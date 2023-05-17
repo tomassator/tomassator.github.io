@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+  
+h2 {
+    font-size: 16px;
+    text-align: center;
+}
+  
+
+  
+header, footer {
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    background-color: rgba(0, 100, 0, 0.192);
+    padding: 3px;
+    text-align: right;
+}
+  
+.header-links ul, .footer-links ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+  
+.header-links li, .footer-links li {
+    margin-right: 20px;
+}
+  
+.header-links a, .footer-links a {
+    color: #000;
+    text-decoration: none;
+}
+  
+.redes img {
+    width: 30px;
+    height: 30px;
+}
+  
+.redes li {
+    display: inline-block;
+    vertical-align: middle;
+}
+  
+.textarea {
+    display: inline-table;
+    min-height: 500px;
+}
+  
+.izq, .der {
+    font-size: 10px;
+    width: 19%;
+    position: static;
+}
+  
+.cen {
+    width: 59%;
+    position: static;
+}
+    
+.footer-container, .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+  
+.footer-logo img, .header-logo img {
+    max-width: 80px;
+}
+  
+.footer-social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.footer-social li {
+    margin-right: 20px;
+}
+
+.footer-social i {
+    font-size: 20px;
+}
+
+.footer-bottom {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
