@@ -1,0 +1,20 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  .logo img {
+    width: 300px; /* Ajusta el ancho del logo según tus necesidades */
+    height: auto; /* Ajusta la altura automáticamente según el ancho */
+  }
+  
+  .navbar-items {
+    display: flex;
+  }
+  
+  .navbar-items a {
+    margin-left: 10px;
+  }
