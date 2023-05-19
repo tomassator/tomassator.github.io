@@ -221,16 +221,33 @@ header, footer {
 }
 
 
+
+
 @media screen and (max-width:600px){
+
+    .footer-links{
+      display: none;
+    }
+
+    .social{
+      display: none;
+    }
+
+    .footer-logo{
+      margin: 0 auto;
+     
+    }
 
     .header-container, .footer-container {
       display: flex;
       align-items: center;
-      justify-content: space-between;
       max-width: 600px;
       margin: 0 auto;
     
     }
+
+
+
     .event-container{
       
       display: grid;
