@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/inicio.css">
+    <!-- <link rel="stylesheet" href="../style/style.css"> -->
     <script src="https://kit.fontawesome.com/1c522322b5.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style/inicio.css">
+    <link rel="stylesheet" href="../style/equipos.css">
     <title>Equipos</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
@@ -19,48 +22,181 @@
             <div class="header-logo">
                 <img src="../media/logo.png" alt="Logo del club">
             </div>
-            <div>
-              <h1>E-Portal</h1>
-            </div>
+
             <div class="header-links">
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
                     <li><a href="equipos.html">Equipos</a></li>
                     <li><a href="eventos.html">Eventos</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="prueba_repo-html">prueba Repo</a></li>
                 </ul>
             </div>
         </div>
-      </header>
+    </header>
 
-      <footer>
-        <div class="footer-container">
-            <div class="footer-logo">
-              <img src="../media/logo.png" alt="Logo del club">
+    <div class="container4" id="api">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../media/csgo.png" alt="Avatar" style="width:250px;height:250px">
+                </div>
+                <div class="flip-card-back" id="api">
+                    <h1>Top Equipos de CS:GO</h1>
+                    <ul v-for="dato in datos_csgo">
+                        {{dato.nombre}} - {{dato.pais}}
+
+                    </ul>
+                </div>
             </div>
-            <div class="footer-links">
-              <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="equipos.html">Equipos</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-              </ul>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../media/lol.png" alt="Avatar" style="width: 250px;;height:250px">
+                </div>
+                <div class="flip-card-back" id="api">
+                    <h1>Top Equipos de League of legends</h1>
+                    <ul v-for="dato1 in datos_lol">
+                        {{dato1.nombre}} - {{dato1.pais}}
+
+                    </ul>
+                </div>
             </div>
-            <div class="social">
-                <ul>
-                    <li> <a href=#><img src="../media/fb.png" alt="Facebook logo"></a></li>
-                    <li><a href=#><img src="../media/ig.png" alt="Instagram logo"></a></li>
-                    <li><a href=#><img src="../media/tw.png" alt="Twitter logo"></a></li>
-                    <li><a href=#><img src="../media/wpp.png" alt="Whatsapp logo"></a></li>
-                    <li><a href=#><img src="../media/yt.png" alt="Youtube logo"></a></li>
-                </ul>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../media/rocket.png" alt="Avatar" style="width:250px;height:250px">
+                </div>
+                <div class="flip-card-back" id="api">
+                    <h1>Top Equipos de Rocket League</h1>
+                    <ul v-for="dato in datos_rocket">
+                        {{dato.nombre}} - {{dato.pais}}
+
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="footer-bottom">
-            <p>Derechos de autor © 2023 E-Portal. Todos los derechos reservados "texto modificado para pueba de BRANCH Test".</p>
-          </div>
-    </footer>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../media/rainbow.png" alt="Avatar" style="width:250px;height:250px">
+                </div>
+                <div class="flip-card-back" id="api">
+                    <h1>Top Equipos de Rainbow Six</h1>
+                    <ul v-for="dato in datos_rainbow">
+                        {{dato.nombre}} - {{dato.pais}}
+
+                    </ul>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="api2">
+        <div class="titulo_juegos">
+            <h1>Counter-Strike Global Offensive</h1>
+        </div>
+        
+        <div class="juego container-flex">
+            <div class="boxcsgo" v-for="dato in datos_csgo">
+                <div class="card">
+                    <img class="imagen_equipo" :src="dato.link_imagen" alt="Avatar">
+                    <div class="desc_equipo">
+                        <h1><b>{{dato.nombre}}</b></h1>
+                        <button type="button" class="btn_equipo"> <a :href="dato.link_equipos" target="_blank">Mas información</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="titulo_juegos">
+            <h1>League of Legends</h1>
+        </div>
+        <div class="juego container-flex">
+            <div class="boxcsgo" v-for="dato in datos_lol">
+                <div class="card">
+                    <img class="imagen_equipo" :src="dato.link_imagen" alt="Avatar">
+                    <div class="desc_equipo">
+                        <h1><b>{{dato.nombre}}</b></h1>
+                        <button type="button" class="btn_equipo"> <a :href="dato.link_equipos" target="_blank">Mas información</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="titulo_juegos">
+            <h1>Rocket League</h1>
+        </div>
+        <div class="juego container-flex">
+            <div class="boxcsgo" v-for="dato in datos_rocket">
+                <div class="card">
+                    <img class="imagen_equipo" :src="dato.link_imagen" alt="Avatar">
+                    <div class="desc_equipo">
+                        <h1><b>{{dato.nombre}}</b></h1>
+                        <button type="button" class="btn_equipo"> <a :href="dato.link_equipos" target="_blank">Mas información</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="titulo_juegos">
+            <h1>Rainbow Six</h1>
+        </div>
+        <div class="juego container-flex">
+            <div class="boxcsgo" v-for="dato in datos_rainbow">
+                <div class="card">
+                    <img class="imagen_equipo" :src="dato.link_imagen" alt="Avatar">
+                    <div class="desc_equipo">
+                        <h1><b>{{dato.nombre}}</b></h1>
+                        <button type="button" class="btn_equipo"> <a :href="dato.link_equipos" target="_blank">Mas información</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+          <img src="../media/logoEportal.png" alt="Logo del club">
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="equipos.html">Equipos</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="social">
+            <ul>
+                <li> <a href=#><img src="../media/fb.png" alt="Facebook logo"></a></li>
+                <li><a href=#><img src="../media/ig.png" alt="Instagram logo"></a></li>
+                <li><a href=#><img src="../media/tw.png" alt="Twitter logo"></a></li>
+                <li><a href=#><img src="../media/wpp.png" alt="Whatsapp logo"></a></li>
+                <li><a href=#><img src="../media/yt.png" alt="Youtube logo"></a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Derechos de autor © 2023 E-Portal. Todos los derechos reservados.</p>
+      </div>
+</footer>
+
+
+        <script src="../js/equipos.js"></script>
 </body>
 
 </html>
