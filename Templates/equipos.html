@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/equipos.css">
     <title>Equipos</title>
+
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
@@ -29,6 +30,7 @@
                     <li><a href="equipos.html">Equipos</a></li>
                     <li><a href="eventos.html">Eventos</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="crearequipo.html">ABM equipos</a></li>
                 </ul>
             </div>
         </div>
@@ -95,9 +97,23 @@
         </div>
     </div>
 
-
-
-
+    <div id="api3">
+        <div class="titulo_juegos">
+            <h1>Counter-Strike Global Offensive</h1>
+        </div>
+        
+        <div class="juego container-flex">
+            <div class="boxcsgo" v-for="dato in datos">
+                <div class="card">
+                    <img class="imagen_equipo" :src="dato.telefono" alt="Avatar">
+                    <div class="desc_equipo">
+                        <h1><b>{{dato.nombre}}</b></h1>
+                        <button type="button" class="btn_equipo"> <a :href="dato.dni" target="_blank">Mas información</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div id="api2">
@@ -196,7 +212,10 @@
 </footer>
 
 
-        <script src="../js/equipos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="../js/equipos.js"></script>
+<script src="../js/equipo.js"></script>
+
 </body>
 
 </html>

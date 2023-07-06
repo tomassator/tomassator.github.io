@@ -56,5 +56,34 @@ const getInfoAsincrono2 = async() => {   //Async es una palabra reservada para f
 
 }
 
+
+const getInfoAsincrono3 = async() => {   //Async es una palabra reservada para funciones asincronicas
+  var app = new Vue({
+      el: '#api3',
+      data: {
+        datos: [],
+      },
+      mounted() {
+        fetch('https://grupo3codoacodo.pythonanywhere.com/alumnos')
+          .then(response => response.json())
+          .then(data => {
+              this.datos = data
+          })
+          .catch(error => {
+            console.log(error);
+          });
+      }
+    });
+
+}
+
+
+
+
+
+
+
+
 getInfoAsincrono()
 getInfoAsincrono2()
+getInfoAsincrono3()
