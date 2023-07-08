@@ -23,8 +23,8 @@ function modificar() {
     let id = document.getElementById("id").value
     let n = document.getElementById("nombre").value
     let a = document.getElementById("apellido").value
-    let d = parseFloat(document.getElementById("DNI").value)
-    let t = parseInt(document.getElementById("telefono").value)
+    let d = document.getElementById("DNI").value
+    let t = document.getElementById("telefono").value
     
    
     let alumno = {
